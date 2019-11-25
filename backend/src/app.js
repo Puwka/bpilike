@@ -20,7 +20,7 @@ if (process.env.ENV !== 'production') {
 }
 
 app
-    .use(serve(path.join(__dirname, '..', 'dist')))
+    .use(serve(path.join(__dirname, '..', '..', 'dist')))
     .use(bodyParser());
 
 const files = readDir(controllersDir)
